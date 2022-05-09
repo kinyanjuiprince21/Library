@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" spacing="50.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.LibraryController">
+   <children>
+      <Label alignment="CENTER" prefHeight="16.0" prefWidth="662.0" text="LIBRARY MANAGEMENT SYSTEM">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Label>
+      <Button fx:id="adminLogInBtn" mnemonicParsing="false" onAction="#toAdminLogIn" text="ADMIN LOGIN">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Button>
+      <Button fx:id="librarianLogInBtn" mnemonicParsing="false" onAction="#toLogin" text="LIBRARIAN LOGIN">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+   </children>
+   <padding>
+      <Insets bottom="30.0" top="30.0" />
+   </padding>
+</VBox>

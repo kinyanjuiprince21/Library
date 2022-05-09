@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ViewIssuedBookController">
+   <children>
+      <HBox>
+         <children>
+            <Button mnemonicParsing="false" onAction="#backToLibrarianSection" text="Back" />
+         </children>
+         <padding>
+            <Insets bottom="2.0" left="10.0" top="2.0" />
+         </padding>
+      </HBox>
+      <TableView fx:id="tblViewIssuedBook">
+        <columns>
+          <TableColumn fx:id="id" prefWidth="75.0" text="id" />
+          <TableColumn fx:id="bookCallNo" prefWidth="100.0" text="bookcallno" />
+            <TableColumn fx:id="studentId" prefWidth="100.0" text="studentid" />
+            <TableColumn fx:id="studentName" prefWidth="150.0" text="studentname" />
+            <TableColumn fx:id="studentContact" prefWidth="150.0" text="studentcontact" />
+            <TableColumn fx:id="issuedDate" prefWidth="100.0" text="issuedate" />
+        </columns>
+      </TableView>
+   </children>
+</VBox>

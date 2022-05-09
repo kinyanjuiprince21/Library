@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER_LEFT" spacing="20.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.addBookController">
+   <children>
+      <Label alignment="CENTER" prefHeight="18.0" prefWidth="600.0" text="Add Book">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <HBox>
+         <children>
+            <Label prefHeight="17.0" prefWidth="71.0" text="Call No:" />
+            <TextField fx:id="txtCallNo" />
+            <Label fx:id="lblCallNo" text="Label" />
+         </children>
+      </HBox>
+      <HBox>
+         <children>
+            <Label prefHeight="17.0" prefWidth="72.0" text="Name:" />
+            <TextField fx:id="txtName" />
+            <Label fx:id="lblName" text="Label" />
+         </children>
+      </HBox>
+      <HBox>
+         <children>
+            <Label prefHeight="17.0" prefWidth="73.0" text="Author:" />
+            <TextField fx:id="txtAuthor" />
+            <Label fx:id="lblAuthor" text="Label" />
+         </children>
+      </HBox>
+      <HBox>
+         <children>
+            <Label prefHeight="17.0" prefWidth="74.0" text="Publisher:" />
+            <TextField fx:id="txtPublisher" />
+            <Label fx:id="lblPublisher" text="Label" />
+         </children>
+      </HBox>
+      <HBox>
+         <children>
+            <Label prefHeight="17.0" prefWidth="75.0" text="Quantity:" />
+            <TextField fx:id="txtQuantity" />
+            <Label fx:id="lblQuantity" text="Label" />
+         </children>
+      </HBox>
+      <HBox spacing="30.0">
+         <children>
+            <Button fx:id="BtnAddBook" mnemonicParsing="false" text="Add Book" />
+            <Button mnemonicParsing="false" onAction="#backToLibrarianSection" text="Back" />
+         </children>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+         <padding>
+            <Insets left="40.0" />
+         </padding>
+      </HBox>
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" top="20.0" />
+   </padding>
+</VBox>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ViewBooksController">
+   <children>
+      <HBox>
+         <children>
+            <Button mnemonicParsing="false" onAction="#backToLibrarianSection" text="Back" />
+         </children>
+         <padding>
+            <Insets bottom="2.0" left="10.0" top="2.0" />
+         </padding>
+      </HBox>
+      <TableView fx:id="tblViewBooks">
+        <columns>
+          <TableColumn fx:id="id" prefWidth="75.0" text="id" />
+          <TableColumn fx:id="callNo" prefWidth="75.0" text="callno" />
+            <TableColumn fx:id="name" prefWidth="130.0" text="name" />
+            <TableColumn fx:id="author" prefWidth="150.0" text="author" />
+            <TableColumn fx:id="publisher" prefWidth="160.0" text="publisher" />
+            <TableColumn fx:id="quantity" prefWidth="75.0" text="quantity" />
+            <TableColumn fx:id="issued" prefWidth="75.0" text="issued" />
+            <TableColumn fx:id="added_date" prefWidth="150.0" text="added_date" />
+        </columns>
+      </TableView>
+   </children>
+</VBox>

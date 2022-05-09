@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox spacing="20.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.returnBookController">
+   <children>
+      <HBox>
+         <children>
+            <Label alignment="CENTER" prefHeight="16.0" prefWidth="600.0" text="Return Book">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox>
+         <children>
+            <Label prefHeight="16.0" prefWidth="110.0" text="Book Callno:" />
+            <TextField fx:id="txtCallNo" prefHeight="24.0" prefWidth="200.0" />
+            <Label fx:id="lblCallNo" text="Label" />
+         </children>
+      </HBox>
+      <HBox>
+         <children>
+            <Label prefHeight="16.0" prefWidth="111.0" text="Student Id:" />
+            <TextField fx:id="txtStudentId" prefHeight="24.0" prefWidth="200.0" />
+            <Label fx:id="lblStudentId" text="Label" />
+         </children>
+      </HBox>
+      <HBox spacing="30.0">
+         <children>
+            <Button fx:id="btnReturnBook" mnemonicParsing="false" text="Return Book">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#backToLibrarianSection" text="Back">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+         <padding>
+            <Insets left="20.0" />
+         </padding>
+      </HBox>
+      <Label text="Note: Check the book properly!" textFill="#da1010">
+         <padding>
+            <Insets left="30.0" />
+         </padding>
+      </Label>
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="30.0" top="20.0" />
+   </padding>
+</VBox>
