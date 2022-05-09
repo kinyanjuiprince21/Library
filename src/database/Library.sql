@@ -1,3 +1,6 @@
+CREATE DATABASE library;
+use library; 
+
 CREATE TABLE librarian (
 librarian_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
 name VARCHAR(100) NOT NULL UNIQUE,
